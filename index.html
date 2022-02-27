@@ -1,57 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Compiled and minified CSS -->
+
+
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <meta charset="UTF-8">
     <script src="https://kit.fontawesome.com/277d889efd.js" crossorigin="anonymous"></script>
-    <title>Title</title>
+    <title>Calory Project</title>
 </head>
 <body>
-<!--Navbar-->
+
 <nav>
-<div class="nav wrapper blue">
-    <div class ="container">
-        <a href="#" class="brand-logo center" href="#">Track calories</a>
+    <div class="nav-wrapper blue">
+        <div class="container">
+            <a href="#" class="brand-logo center">Track calories</a>
+        </div>
     </div>
-    </div>
-    </nav>
+</nav>
 
-    <br>
-
-    <div class="container">
-        <!--form card-->
-        <div class="card">
-            <div class="card-content">
-                <span class="card-title">Add Meal / Food Item</span>
-                <form class="col">
+<br>
+<div class="container">
+    <div class="card">
+        <div class="card-content">
+            <span class="card-title">Add Meal / Food Item</span>
+            <form class="col">
                 <div class="row">
-                    <div class="input-field,col s6">
-                    <input type="text" placeholdcr="Add Item"
-                           id="item-name">
+                    <div class="input-field col s6">
+
+                        <input type="text" placeholder="Add Item" id="item-name">
                         <label for="item-name">Meal</label>
                     </div>
                     <div class="input-field col s6">
-                        <input type="text" placeholder="Add Calories" id="item-calories">
+                        <input id="item-calories" type="text" placeholder="Add Calories" >
                         <label for="item-calories">Calories</label>
                     </div>
-                    <button class="add-btn btn blue darken-3"><i class="fa fa-plus"></i>Add Meal</button>
-            </div>
+                    <button  class="add-btn btn blue darken-3"><i class="fa fa-plus"></i> Add Meal</button>
+                    <button id="uuendus" class="update-btn add-btn btn orange" style="visibility: hidden;"  none;"><i class="far fa-edit"></i>Update Meal</button>
+                </div>
             </form>
-        </div>
-
-
-        <!---Calorie Count--->
-        <h3 class="center align">Total Calories: <span class="total-calories">0</span></h3>
-
-        <!--Item List-->
-        <div id="item-list" class="collection">
 
         </div>
+    </div>
 
-<!-- Compiled and minified JavaScript -->
+
+<h3 class="center-align">Total Calories: <span class="total-calories">0</span></h3>
+
+<ul id="item-list" class="collection"></ul>
+</div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script src="app.js"></script>
+
+
 </body>
 </html>
+

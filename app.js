@@ -1,4 +1,9 @@
 //Storage Controller
+function deleteItems() {
+    window.localStorage.clear();
+    location.reload();
+}
+
 const StorageCtrl = (function (){
     //public methods
     return {
@@ -183,7 +188,8 @@ const UICtrl = (function() {
         addBtn: '.add-btn',
         totalCalories: '.total-calories',
         deleteBtn: '.delete-btn',
-        updateBtn: '.update-btn'
+        updateBtn: '.update-btn',
+        clearBtn: 'clear-btn'
     }
     return{
         populateItemList: function(items){
@@ -305,8 +311,10 @@ const App = (function(ItemCtrl,StorageCtrl, UICtrl){
         event.preventDefault();
 
     }
+
     const updateBtn = function(event) {
         event.preventDefault();
+
 
         let UISelectors = UICtrl.getSelectors();
         let itemList = document.querySelector(UISelectors.itemList);
@@ -329,6 +337,7 @@ const App = (function(ItemCtrl,StorageCtrl, UICtrl){
 
         UICtrl.clearInput()
         event.preventDefault();
+
 
     };
     //item add submit function

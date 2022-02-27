@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 
@@ -16,7 +17,9 @@
     <div class="nav-wrapper blue">
         <div class="container">
             <a href="#" class="brand-logo center">Track calories</a>
+
         </div>
+
     </div>
 </nav>
 
@@ -24,6 +27,7 @@
 <div class="container">
     <div class="card">
         <div class="card-content">
+            <button onclick="deleteItems()" style="float:right;" class="clear-btn btn blue darken-3"><i class="fa fa-plus"></i> Clear All</button>
             <span class="card-title">Add Meal / Food Item</span>
             <form class="col">
                 <div class="row">
@@ -37,7 +41,10 @@
                         <label for="item-calories">Calories</label>
                     </div>
                     <button  class="add-btn btn blue darken-3"><i class="fa fa-plus"></i> Add Meal</button>
-                    <button id="uuendus" class="update-btn add-btn btn orange" style="visibility: hidden;"  none;"><i class="far fa-edit"></i>Update Meal</button>
+                    <button id="uuendus" class="update-btn add-btn btn orange" style="visibility: hidden;"none;"><i class="far fa-edit"></i>
+                    Update Meal</button>
+                    <button id="kustuta" class="update-btn add-btn btn red" style="visibility: hidden;"none;"><i class="far fa-edit"></i>
+                    KUSTUTA</button>
                 </div>
             </form>
 
@@ -49,6 +56,7 @@
 
 <ul id="item-list" class="collection"></ul>
 </div>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script src="app.js"></script>
 
